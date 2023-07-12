@@ -10,11 +10,11 @@ const FormationCard = ({ index, name, specialty, start, end, university }) => {
   return (
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
-      className="card  sm:w-[360px] xs:h-[360px] w-full"
+      className="card  sm:w-[360px]  w-full"
     >
-      <div className="inner bg-black-200 rounded-3xl">
+      <div className="inner bg-black-200 rounded-3xl ">
         <div className="back p-10 flex items-center flex-col">
-          <p className="text-white font-black text-[42px]">{name}</p>
+          <p className="text-white font-black text-[36px]">{name}</p>
 
           <div className="mt-1">
             <p className="text-white tracking-wider text-[18px]">{specialty}</p>

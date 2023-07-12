@@ -79,28 +79,12 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Vue JS",
-    icon: vuejs,
   },
   {
     name: "Node JS",
@@ -111,12 +95,28 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "Git",
     icon: git,
+  },
+  {
+    name: "HTML 5",
+    icon: html,
+  },
+  {
+    name: "CSS 3",
+    icon: css,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
+  },
+  {
+    name: "Vue JS",
+    icon: vuejs,
+  },
+  {
+    name: "Three JS",
+    icon: threejs,
   },
   {
     name: "Salesforce",
@@ -134,7 +134,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
+    title: "Desarrollador React.js",
     company_name: "TVUp / Prácticas",
     icon: tvup,
     iconBg: "#383E56",

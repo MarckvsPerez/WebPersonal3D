@@ -12,9 +12,12 @@
   scroll-behavior: smooth;
   color-scheme: dark;
 }
+
 .card {
   perspective: 1000px;
   cursor: pointer;
+  height: 360px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .inner {
