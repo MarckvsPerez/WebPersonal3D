@@ -8,53 +8,71 @@ import {
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
   nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  sass,
+  vuejs,
+  salesforce,
+  tailwind,
   threejs,
+  capgemini,
+  tvup,
+  cursos,
+  gym,
+  marcWeb,
+  uoc,
 } from "../assets";
 
-export const navLinks = [
+const personData = {
+  firstName: "Marc",
+  lastName: "Pérez Salat",
+  intro:
+    "Estudiante del grado en Multimedia y del grado en Ingenieria Informatica en la UOC",
+  greeting: "Hola, soy ",
+};
+
+const about = {
+  title: "INTRODUCCIÓN",
+  subtitle: "Resumen",
+  text: "Soy un apasionado programador con sólida experiencia en JavaScript, React, Node.js y Three.js. Mi enfoque principal es desarrollar soluciones innovadoras y eficientes que brinden experiencias únicas a los usuarios.",
+};
+
+const experienceInfo = {
+  title: "QUÉ HE HECHO HASTA AHORA",
+  subtitle: "Experiencia Laboral",
+};
+
+const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Sobre mí",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experiencia",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Contacto",
   },
 ];
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Desarrollador Frontend",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "Desarrollador Backend",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Desarrollador React",
+    icon: mobile,
+  },
+  {
+    title: "Especialista en UX",
     icon: creator,
   },
 ];
@@ -81,12 +99,8 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Vue JS",
+    icon: vuejs,
   },
   {
     name: "Node JS",
@@ -101,106 +115,98 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "Salesforce",
+    icon: salesforce,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "Sass",
+    icon: sass,
+  },
+  {
+    name: "Tailwind",
+    icon: tailwind,
   },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "TVUp / Prácticas",
+    icon: tvup,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Marzo 2023 - Julio 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
+      "Colaboración con equipos interfuncionales, incluyendo diseñadores, gerentes de producto y otros desarrolladores, para crear productos de alta calidad.",
+      "Implementación de diseño receptivo y asegurando la compatibilidad entre navegadores.",
+      "Participación en revisiones de código y proporcionando retroalimentación constructiva a otros desarrolladores.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Ingeniero de software",
+    company_name: "Capgemini",
+    icon: capgemini,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Julio 2022 - Febrero 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrollo y personalización de soluciones basadas en Salesforce para satisfacer las necesidades del cliente.",
+      "Colaboración con equipos interfuncionales, incluyendo administradores de sistemas, consultores de negocio y otros programadores, para implementar soluciones eficientes en Salesforce.",
+      "Configuración y personalización de la plataforma Salesforce, incluyendo el diseño de flujos de trabajo, reglas de validación y automatización de procesos empresariales.",
+      "Implementación de ETL (Extracción, Transformación y Carga) para la migración de datos desde fuentes externas a Salesforce.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Ingeniero de software",
+    company_name: "Capgemini / Prácticas",
+    icon: capgemini,
+    iconBg: "#383E56",
+    date: "Octubre 2021 - Junio 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Desarrollo y personalización de soluciones basadas en Salesforce para satisfacer las necesidades del cliente.",
+      "Colaboración con equipos interfuncionales, incluyendo administradores de sistemas, consultores de negocio y otros programadores, para implementar soluciones eficientes en Salesforce.",
+      "Configuración y personalización de la plataforma Salesforce, incluyendo el diseño de flujos de trabajo, reglas de validación y automatización de procesos empresariales.",
+      "Integración de aplicaciones y sistemas externos con Salesforce mediante el uso de API y herramientas de integración.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const myWork = {
+  title: "Mi trabajo",
+  subtitle: "Proyectos",
+  text: "Los siguientes proyectos muestran mis habilidades y experiencia a través de ejemplos reales de mi trabajo. Cada proyecto se describe brevemente con enlaces a repositorios de código y demos en vivo. Refleja mi capacidad para resolver problemas complejos, trabajar con diferentes tecnologías y gestionar proyectos de manera efectiva.",
+};
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Marc Web",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Sitio web personal desarrollado con React, Vite y Three.js que presenta información sobre mi formación, experiencia laboral y los proyectos que he realizado.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: marcWeb,
+    source_code_link: "https://github.com/MarckvsPerez/WebPersonal3D",
+    web_link: "",
+  },
+  {
+    name: "GymChunin",
+    description:
+      "Plataforma web reactiva basada en la pila MERN (MongoDB, Express, React y Node.js) que permite a los usuarios registrarse, buscar ejercicios de musculación y dar 'me gusta'. Además, incluye un sistema de registro de usuarios administradores para gestionar la página web",
     tags: [
       {
         name: "react",
@@ -211,55 +217,93 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "next",
         color: "pink-text-gradient",
       },
+      {
+        name: "express",
+        color: "blue-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: gym,
+    source_code_link: "https://github.com/MarckvsPerez/GymChuninClient",
+    web_link: "https://gymchunin.netlify.app/",
   },
   {
-    name: "Job IT",
+    name: "My Courses",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Plataforma web reactiva basada en la pila MERN (MongoDB, Express, React y Node.js) que permite ver los cursos que he realizado y las tecnologías que conozco. Además incluye un sistema de registro de usuarios para administrar la web",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "mongodb",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "next",
         color: "pink-text-gradient",
       },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
-        name: "nextjs",
+        name: "express",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: cursos,
+    source_code_link: "https://github.com/MarckvsPerez/webPersonalClient",
+    web_link: "https://marccourses.netlify.app/#/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const myFormation = {
+  title: "QUÉ HE ESTUDIADO",
+  subtitle: "Formación",
+};
+
+const formation = [
+  {
+    university: uoc,
+    name: "Grado Multimedia",
+    specialty: "Ingenieria Web",
+    start: "2019",
+    end: "Actualmente",
+  },
+  {
+    university: uoc,
+    name: "Grado Ingenieria Informática",
+    specialty: "Ingenieria Web",
+    start: "2021",
+    end: "Actualmente",
+  },
+];
+
+const contact = {
+  title: "Deja un mensaje",
+  subtitle: "Contacto",
+  nameTag: "Tu nombre",
+  nameText: "¿Cuál es tu nombre?",
+  emailTag: "Tu email",
+  emailText: "¿Cuál es tu correo electrónico?",
+  messageTag: "Tu mensaje",
+  messageText: "¿Cuál es tu mensaje?",
+  button: "Enviar",
+  loading: "Enviando...",
+  alert: "Gracias. Te responderé lo antes posible.",
+};
+
+export {
+  personData,
+  navLinks,
+  about,
+  experienceInfo,
+  services,
+  technologies,
+  experiences,
+  myWork,
+  myFormation,
+  formation,
+  projects,
+  contact,
+};

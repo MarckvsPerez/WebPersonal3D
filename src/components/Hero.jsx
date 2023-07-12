@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { personData } from "../constants";
 
 const Hero = () => {
   return (
@@ -16,12 +17,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hola, soy <span className="text-[#915EFF]">Marc</span>
+            {personData.greeting}
+            <span className="text-[#915EFF]">{personData.firstName}</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Estudiante del grado en Multimedia y
-            <br className="sm:block hidden" />
-            del grado en ingenieria informatica en la UOC
+            {personData.intro}
           </p>
         </div>
       </div>
