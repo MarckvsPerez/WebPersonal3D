@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../constants/languageContext";
+import texts from "../constants/texts";
+
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects, myWork } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -25,7 +28,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] h-[518px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px]  w-full"
       >
         <div
           className="relative w-full h-[230px] cursor-pointer"
@@ -72,6 +75,9 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const { language } = useContext(LanguageContext);
+  const { projects, myWork } = texts[language];
+
   return (
     <>
       <motion.div variants={textVariant()}>

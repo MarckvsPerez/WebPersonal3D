@@ -1,14 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks, personData } from "../constants";
 import { logo, menu, close } from "../assets";
+
+import LanguageContext from "../constants/languageContext";
+import texts from "../constants/texts";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const { language, changeLanguage } = useContext(LanguageContext);
+
+  const { personData, navLinks } = texts[language];
+
+  const handleChangeLanguage = (selectedLanguage) => {
+    changeLanguage(selectedLanguage);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,6 +73,18 @@ const Navbar = () => {
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <select
+              id="languages"
+              className="bg-transparent font-poppins text-secondary cursor-pointer hover:text-white text-[18px] font-medium"
+              value={language}
+              onChange={(e) => handleChangeLanguage(e.target.value)}
+            >
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="ca">Català</option>
+            </select>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -93,6 +115,17 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <select
+                  className="bg-transparent font-poppins text-secondary cursor-pointer text-[16px] font-medium"
+                  value={language}
+                  onChange={(e) => handleChangeLanguage(e.target.value)}
+                >
+                  <option value="en">English</option>
+                  <option value="es">Español</option>
+                  <option value="ca">Català</option>
+                </select>
+              </li>
             </ul>
           </div>
         </div>

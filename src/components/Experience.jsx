@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../constants/languageContext";
+import texts from "../constants/texts";
+
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -8,7 +12,6 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences, experienceInfo } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -57,6 +60,8 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { language } = useContext(LanguageContext);
+  const { experiences, experienceInfo } = texts[language];
   return (
     <>
       <motion.div variants={textVariant()}>

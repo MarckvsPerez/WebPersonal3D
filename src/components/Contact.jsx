@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import { motion } from "framer-motion";
 
@@ -10,7 +10,9 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { contact } from "../constants";
+
+import LanguageContext from "../constants/languageContext";
+import texts from "../constants/texts";
 
 /** Esquema de validación  */
 const validationSchema = Yup.object().shape({
@@ -22,6 +24,9 @@ const validationSchema = Yup.object().shape({
 });
 
 const Contact = () => {
+  const { language } = useContext(LanguageContext);
+  const { contact } = texts[language];
+
   const formik = useFormik({
     initialValues: {
       name: "",

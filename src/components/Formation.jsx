@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import LanguageContext from "../constants/languageContext";
+import texts from "../constants/texts";
+
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { formation, myFormation } from "../constants";
 
 const FormationCard = ({ index, name, specialty, start, end, university }) => {
   return (
@@ -38,6 +41,9 @@ const FormationCard = ({ index, name, specialty, start, end, university }) => {
 };
 
 const Formation = () => {
+  const { language } = useContext(LanguageContext);
+  const { myFormation, formation } = texts[language];
+
   return (
     <div className={`mt-12 bg-black-100 rounded-[20px] `}>
       <div
