@@ -36,7 +36,7 @@ const texts = {
   about: {
     title: "INTRODUCTION",
     subtitle: "Summary",
-    text: "I am a Full Stack developer with two years of experience in creating web applications and expertise in JavaScript, React, Node.js, and Three.js. My academic background includes degrees in Multimedia and Computer Engineering from UOC, which supports my ability to approach projects comprehensively and creatively.",
+    text: "I'm Marc, a Full Stack developer with two years of experience in JavaScript and Java (Apex). My academic background includes degrees in Multimedia and Computer Engineering from UOC, supporting my ability to approach projects comprehensively and creatively. In addition to my web development experience, I have created personal projects that showcase my skills in technologies like React and Node.js. I value the importance of continuous learning and the satisfaction of delivering successful projects.",
   },
 
   experienceInfo: {

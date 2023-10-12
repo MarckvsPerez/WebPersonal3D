@@ -36,7 +36,7 @@ const texts = {
   about: {
     title: "INTRODUCCIÓ",
     subtitle: "Resum",
-    text: "Sóc un desenvolupador Full Stack amb dos anys d'experiència en la creació d'aplicacions web i coneixements en JavaScript, React, Node.js i Three.js. La meva formació acadèmica inclou els graus en Multimèdia i Enginyeria Informàtica a la UOC, la qual cosa avala la meva habilitat per abordar projectes de manera integral i creativa.",
+    text: "Sóc en Marc, un desenvolupador Full Stack amb dos anys d'experiència en JavaScript i Java (Apex). La meva formació acadèmica inclou els graus en Multimèdia i Enginyeria Informàtica a la UOC, recolzant la meva capacitat per abordar projectes de manera integral i creativa. A més de la meva experiència en desenvolupament web, he creat projectes personals que destaquen les meves habilitats en tecnologies com React i Node.js. Valoro la importància de l'aprenentatge continu i la satisfacció de lliurar projectes d'èxit.",
   },
 
   experienceInfo: {
