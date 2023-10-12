@@ -13,11 +13,12 @@ import {
   git,
   sass,
   vuejs,
-  salesforce,
+  java,
   tailwind,
   threejs,
   capgemini,
   tvup,
+  prestige,
   cursos,
   gym,
   marcWeb,
@@ -26,17 +27,16 @@ import {
 
 const texts = {
   personData: {
+    greeting: "Hola, soy ",
     firstName: "Marc",
     lastName: "Pérez Salat",
-    intro:
-      "Estudiante del grado en Multimedia y del grado en Ingeniería Informática en la UOC",
-    greeting: "Hola, soy ",
+    intro: "Desarrollador web Full Stack especializado en JavaScript",
   },
 
   about: {
     title: "INTRODUCCIÓN",
     subtitle: "Resumen",
-    text: "Soy un apasionado programador con sólida experiencia en JavaScript, React, Node.js y Three.js. Mi enfoque principal es desarrollar soluciones innovadoras y eficientes que brinden experiencias únicas a los usuarios.",
+    text: "Soy un desarrollador Full Stack con dos años de experiencia en la creación de aplicaciones web y conocimientos en JavaScript, React, Node.js y Three.js. Mi formación académica incluye los grados en Multimedia e Ingeniería Informática en la UOC, lo que respalda mi habilidad para abordar proyectos de manera integral y creativa.",
   },
 
   experienceInfo: {
@@ -71,32 +71,12 @@ const texts = {
       icon: mobile,
     },
     {
-      title: "Especialista en UX",
+      title: "Especialista en UX/UI",
       icon: creator,
     },
   ],
 
   technologies: [
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Git",
-      icon: git,
-    },
     {
       name: "HTML 5",
       icon: html,
@@ -106,21 +86,34 @@ const texts = {
       icon: css,
     },
     {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
       name: "TypeScript",
       icon: typescript,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "Vue JS",
       icon: vuejs,
     },
     {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
-    {
-      name: "Salesforce",
-      icon: salesforce,
-    },
+
     {
       name: "Sass",
       icon: sass,
@@ -129,46 +122,62 @@ const texts = {
       name: "Tailwind",
       icon: tailwind,
     },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Git",
+      icon: git,
+    },
   ],
 
   experiences: [
     {
-      title: "Desarrollador React.js",
-      company_name: "TVUp / Prácticas",
-      icon: tvup,
+      title: "Desenvolupador Full Stack",
+      company_name: "Prestige Software",
+      icon: prestige,
       iconBg: "#383E56",
-      date: "Marzo 2023 - Julio 2023",
+      date: "Setembre 2023 - Actualment",
       points: [
-        "Desarrollo y mantenimiento de aplicaciones web utilizando React.js y otras tecnologías relacionadas.",
-        "Colaboración con equipos interfuncionales, incluyendo diseñadores, gerentes de producto y otros desarrolladores, para crear productos de alta calidad.",
-        "Implementación de diseño receptivo y asegurando la compatibilidad entre navegadores.",
-        "Participación en revisiones de código y proporcionando retroalimentación constructiva a otros desarrolladores.",
+        "Desenvolupar i mantenir la lògica del servidor utilitzant Node.js.",
+        "Desenvolupament de pantalles per a diverses aplicacions empresarials utilitzant JavaScript, seguint mockups dissenyats per l'equip de disseny.",
+        "Participar activament en la planificació i execució de projectes de desenvolupament, assegurant entregues a temps i dins del pressupost.",
       ],
     },
     {
-      title: "Ingeniero de software",
+      title: "Desenvolupador Front-End",
+      company_name: "TVUp / Becari",
+      icon: tvup,
+      iconBg: "#383E56",
+      date: "Març 2023 - Juliol 2023",
+      points: [
+        "Implementació de pantalles per a l'aplicació TiviFy segons els mockups proporcionats per l'equip de disseny, utilitzant React.js i TypeScript.",
+        "Gestió del control de versions a través de Git, incloent la creació i revisió de pull requests per a col·laborar eficaçment amb l'equip de desenvolupament.",
+      ],
+    },
+    {
+      title: "Desenvolupador Front-End",
       company_name: "Capgemini",
       icon: capgemini,
       iconBg: "#383E56",
-      date: "Julio 2022 - Febrero 2023",
+      date: "Juliol 2022 - Febrer 2023",
       points: [
-        "Desarrollo y personalización de soluciones basadas en Salesforce para satisfacer las necesidades del cliente.",
-        "Colaboración con equipos interfuncionales, incluyendo administradores de sistemas, consultores de negocio y otros programadores, para implementar soluciones eficientes en Salesforce.",
-        "Configuración y personalización de la plataforma Salesforce, incluyendo el diseño de flujos de trabajo, reglas de validación y automatización de procesos empresariales.",
-        "Implementación de ETL (Extracción, Transformación y Carga) para la migración de datos desde fuentes externas a Salesforce.",
+        "Desenvolupament de pàgines i components en Salesforce utilitzant Apex, la qual cosa inclou la configuració de fluxos de treball, regles de validació i l'automatització de processos empresarials.",
+        "Implementació de processos d'ETL (Extracció, Transformació i Càrrega) mitjançant Talend i SQL per a la migració de dades des de fonts externes a Salesforce.",
+        "Participació en la gestió de projectes, incloent la planificació i seguiment utilitzant Jira, per garantir entregues d'èxit a temps i dins del pressupost.",
       ],
     },
     {
-      title: "Ingeniero de software",
-      company_name: "Capgemini / Prácticas",
+      title: "Desenvolupador Front-End",
+      company_name: "Capgemini / Becari",
       icon: capgemini,
       iconBg: "#383E56",
-      date: "Octubre 2021 - Junio 2022",
+      date: "Octubre 2021 - Juny 2022",
       points: [
-        "Desarrollo y personalización de soluciones basadas en Salesforce para satisfacer las necesidades del cliente.",
-        "Colaboración con equipos interfuncionales, incluyendo administradores de sistemas, consultores de negocio y otros programadores, para implementar soluciones eficientes en Salesforce.",
-        "Configuración y personalización de la plataforma Salesforce, incluyendo el diseño de flujos de trabajo, reglas de validación y automatización de procesos empresariales.",
-        "Integración de aplicaciones y sistemas externos con Salesforce mediante el uso de API y herramientas de integración.",
+        "Desenvolupament de pàgines i components en Salesforce utilitzant Apex, la qual cosa inclou la configuració de fluxos de treball, regles de validació i l'automatització de processos empresarials.",
+        "Implementació de processos d'ETL (Extracció, Transformació i Càrrega) mitjançant Talend i SQL per a la migració de dades des de fonts externes a Salesforce.",
+        "Participació en la gestió de projectes, incloent la planificació i seguiment utilitzant Jira, per garantir entregues d'èxit a temps i dins del pressupost.",
       ],
     },
   ],

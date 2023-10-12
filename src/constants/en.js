@@ -13,11 +13,12 @@ import {
   git,
   sass,
   vuejs,
-  salesforce,
+  java,
   tailwind,
   threejs,
   capgemini,
   tvup,
+  prestige,
   cursos,
   gym,
   marcWeb,
@@ -26,17 +27,16 @@ import {
 
 const texts = {
   personData: {
+    greeting: "Hi, I'm ",
     firstName: "Marc",
     lastName: "Pérez Salat",
-    intro:
-      "I am a student of Multimedia degree and Computer Engineering degree at UOC",
-    greeting: "Hi, I'm ",
+    intro: "Full Stack web developer specialized in JavaScript",
   },
 
   about: {
     title: "INTRODUCTION",
     subtitle: "Summary",
-    text: "I am a passionate programmer with solid experience in JavaScript, React, Node.js, and Three.js. My main focus is to develop innovative and efficient solutions that provide unique experiences to the users.",
+    text: "I am a Full Stack developer with two years of experience in creating web applications and expertise in JavaScript, React, Node.js, and Three.js. My academic background includes degrees in Multimedia and Computer Engineering from UOC, which supports my ability to approach projects comprehensively and creatively.",
   },
 
   experienceInfo: {
@@ -71,32 +71,12 @@ const texts = {
       icon: mobile,
     },
     {
-      title: "UX Specialist",
+      title: "UX/UI Specialist",
       icon: creator,
     },
   ],
 
   technologies: [
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Git",
-      icon: git,
-    },
     {
       name: "HTML 5",
       icon: html,
@@ -106,21 +86,34 @@ const texts = {
       icon: css,
     },
     {
+      name: "JavaScript",
+      icon: javascript,
+    },
+    {
       name: "TypeScript",
       icon: typescript,
+    },
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "React JS",
+      icon: reactjs,
     },
     {
       name: "Vue JS",
       icon: vuejs,
     },
     {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
       name: "Three JS",
       icon: threejs,
     },
-    {
-      name: "Salesforce",
-      icon: salesforce,
-    },
+
     {
       name: "Sass",
       icon: sass,
@@ -129,46 +122,62 @@ const texts = {
       name: "Tailwind",
       icon: tailwind,
     },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
+    {
+      name: "Git",
+      icon: git,
+    },
   ],
 
   experiences: [
     {
-      title: "React.js Developer",
-      company_name: "TVUp / Internship",
+      title: "Full Stack Developer",
+      company_name: "Prestige Software",
+      icon: prestige,
+      iconBg: "#383E56",
+      date: "September 2023 - Present",
+      points: [
+        "Develop and maintain server logic using Node.js.",
+        "Development of screens for various business applications using JavaScript, following mockups designed by the design team.",
+        "Active participation in planning and executing development projects, ensuring on-time and within-budget deliveries.",
+      ],
+    },
+    {
+      title: "Front-End Developer",
+      company_name: "TVUp / Intern",
       icon: tvup,
       iconBg: "#383E56",
       date: "March 2023 - July 2023",
       points: [
-        "Developed and maintained web applications using React.js and other related technologies.",
-        "Collaborated with cross-functional teams, including designers, product managers, and other developers, to create high-quality products.",
-        "Implemented responsive design and ensured browser compatibility.",
-        "Participated in code reviews and provided constructive feedback to other developers.",
+        "Implementation of screens for the TiviFy application according to mockups provided by the design team, using React.js and TypeScript.",
+        "Version control management through Git, including the creation and review of pull requests for effective collaboration with the development team.",
       ],
     },
     {
-      title: "Software Engineer",
+      title: "Front-End Developer",
       company_name: "Capgemini",
       icon: capgemini,
       iconBg: "#383E56",
       date: "July 2022 - February 2023",
       points: [
-        "Developed and customized Salesforce-based solutions to meet client needs.",
-        "Collaborated with cross-functional teams, including system administrators, business consultants, and other programmers, to implement efficient solutions on Salesforce.",
-        "Configured and customized the Salesforce platform, including designing workflows, validation rules, and business process automation.",
-        "Implemented ETL (Extraction, Transformation, and Loading) for data migration from external sources to Salesforce.",
+        "Development of pages and components in Salesforce using Apex, including the configuration of workflows, validation rules, and automation of business processes.",
+        "Implementation of ETL (Extraction, Transformation, and Loading) processes using Talend and SQL for data migration from external sources to Salesforce.",
+        "Participation in project management, including planning and tracking using Jira, to ensure successful, on-time, and within-budget deliveries.",
       ],
     },
     {
-      title: "Software Engineer",
-      company_name: "Capgemini / Internship",
+      title: "Front-End Developer",
+      company_name: "Capgemini / Intern",
       icon: capgemini,
       iconBg: "#383E56",
       date: "October 2021 - June 2022",
       points: [
-        "Developed and customized Salesforce-based solutions to meet client needs.",
-        "Collaborated with cross-functional teams, including system administrators, business consultants, and other programmers, to implement efficient solutions on Salesforce.",
-        "Configured and customized the Salesforce platform, including designing workflows, validation rules, and business process automation.",
-        "Integrated external applications and systems with Salesforce using APIs and integration tools.",
+        "Development of pages and components in Salesforce using Apex, including the configuration of workflows, validation rules, and automation of business processes.",
+        "Implementation of ETL (Extraction, Transformation, and Loading) processes using Talend and SQL for data migration from external sources to Salesforce.",
+        "Participation in project management, including planning and tracking using Jira, to ensure successful, on-time, and within-budget deliveries.",
       ],
     },
   ],

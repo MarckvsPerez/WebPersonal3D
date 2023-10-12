@@ -18,11 +18,12 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import sass from "./tech/sass.png";
-import salesforce from "./tech/salesforce.png";
 import vuejs from "./tech/vuejs.png";
+import java from "./tech/java.png";
 
 import capgemini from "./company/capgemini.png";
 import tvup from "./company/tvup.png";
+import prestige from "./company/prestige.png";
 
 import cursos from "./Cursos.png";
 import gym from "./GymChunin.png";
@@ -42,6 +43,7 @@ export {
   css,
   git,
   html,
+  java,
   javascript,
   mongodb,
   nodejs,
@@ -51,9 +53,9 @@ export {
   threejs,
   sass,
   vuejs,
-  salesforce,
   capgemini,
   tvup,
+  prestige,
   cursos,
   gym,
   marcWeb,
